@@ -50,6 +50,8 @@ This application was built using MySQL, Node, Express, Handlebars, JavaScript, a
 
 ➡️ Once a burger has been devoured, you can click on it to delete it, or rate it using the ⭐⭐⭐ on the right hand side. 
 
+![eatdaburger](https://user-images.githubusercontent.com/70370805/104818161-ab199680-57da-11eb-9451-fa93ebde15d6.gif)
+
 ## Questions or Comments
 
 If you have any questions or comments about the repo, please contact me below 👇:
