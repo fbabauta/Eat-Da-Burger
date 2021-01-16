@@ -41,14 +41,14 @@ body, html {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    color: white;
+    font-family: 'Yusei Magic', cursive;
+    color: black;
 }
 
 h3 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Yusei Magic', cursive;
     font-size: 36px;
-    color: #294651;
+    color: black;
 }
 
 h6 {
@@ -63,12 +63,12 @@ h6 {
     text-transform: uppercase;
     font-weight: 300;
     background: none;
-    color: #fda95b;
+    color: #3d2209;
     border: 1px solid #fda95b;
 }
 
 .action-btn:hover {
-    background-color: #fda95b;
+    background-color: #3d2209;
     color: white;
 }
 
