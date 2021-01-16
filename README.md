@@ -54,5 +54,5 @@ This application was built using MySQL, Node, Express, Handlebars, JavaScript, a
 
 If you have any questions or comments about the repo, please contact me below 👇:
 
-:octocat: GitHub: [fbabauta](https://github.com/fbabauta) | :email: Email: francine.babauta@outlook.com | :link: linkedin.com/in/francine-babauta
+:octocat: GitHub: [fbabauta](https://github.com/fbabauta) | :email: Email: francine.babauta@outlook.com | :link: https://linkedin.com/in/francine-babauta
 
