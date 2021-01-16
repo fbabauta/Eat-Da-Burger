@@ -29,7 +29,7 @@ let burger = {
 
     // update stars rating
     updateRating: function (ratingNum, burgerID, cb) {
-        orm.updateOne("burgers", "rating", ratingNum, "id", burgerID, cb, functiono(res){
+        orm.updateOne("burgers", "rating", ratingNum, "id", burgerID, cb, function(res){
             cb(res);
         });
     },
@@ -39,7 +39,7 @@ let burger = {
         orm.deleteOne("burgers", "id", id, function (res) {
             cb(res);
         });
-    };
+    }
 };
 
 // export burger object and methods
