@@ -6,6 +6,8 @@ Eat-Da-Burger is a full-stack, restaurant application that allows the user to tr
 
 This application was built using MySQL, Node, Express, Handlebars, JavaScript, and a homemade ORM. The structure of the codebase follows the MVC design pattern, by breaking up code that is concerned with the Model (our database and it's logic), View (what the user sees and interactions with), and Controller (the logic that allows our View and Model to speak to eachother) of the application. Eat-Da-Burger is a true full-stack application, that allows the user to create, retrieve, update, and delete data from a MySQL database, through a graphical user-interface. 
 
+![image](https://user-images.githubusercontent.com/70370805/104816977-4dce1700-57d3-11eb-899b-3c9957e3dd4f.png)
+
 ## Table of Contents
 
 🔧 Technologies
