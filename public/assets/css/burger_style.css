@@ -1,0 +1,133 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pic-section {
+    background-image: url("../images/burger.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+
+.devour-btn, .delete-btn {
+    background: none;
+    border: none;
+    height: 50%;
+}
+
+.devour-item:hover, .devoured-item:hover {
+    background-color: #fda95b59;
+}
+
+.card {
+    margin-top: 40px;
+    border: 1px solid #fda95b;
+    margin-bottom: 40px;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid #fda95b;
+}
+
+.card-subtitle {
+    padding-top: 5px;
+}
+
+.jumbotron {
+    background: none;
+    padding-top: 100px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #294651;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+.action-btn {
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    margin: 20px 10px 20px 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: none;
+    color: #fda95b;
+    border: 1px solid #fda95b;
+}
+
+.action-btn:hover {
+    background-color: #fda95b;
+    color: white;
+}
+
+#new-burger-btn {
+    margin: 40px auto 0px auto;
+}
+
+#submit-burger-btn {
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 20px 10px 20px 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #294651;
+    color: white;
+}
+
+#submit-burger-btn:hover {
+    font-size: 18px;
+}
+
+.list-group-item {
+    border: 1px solid #fda95b59;
+    color: #294651;
+}
+
+footer {
+    background-color: #fda95b;
+    color: white;
+    height: 70px;
+}
+
+/* star rating */
+.fa-star {
+    color: gray;
+    border: none;
+    padding: none;
+}
+
+.fa-star:hover {
+    color: orange;
+}
+
+.checked {
+    color: orange;
+}
+
+/*media queries */
+@media only screen and (min-width: 768px) {
+    #devoured-list, #menu {
+        height: 100%;
+    }
+
+    .add-row {
+        margin-top: 40px;
+    }
+
+    #new-burger-form {
+        width: 50%;
+    }
+}

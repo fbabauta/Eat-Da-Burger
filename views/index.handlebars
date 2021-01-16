@@ -1,46 +1,92 @@
-<div class="container">
+<div id="pic-section">
     <div class="row">
-        <div class="col-md-12 text-center" id="top-bar">
-            <img src="/assets/img/burger.png" alt="burger" />
-            <h1> Eat-Da-Burger! </h1>
-        </div>
-        <div class="col-md-6 text-center" class="task">
-            <div class="row">
-                {{#each burger_data}}
-                    {{#unless this.devoured}}
-                        <div class="col-md-9 text-center">
-                            <pre>{{this.id}}. {{this.burger_name}}
-                            </pre>
-                            <!-- {{this.Date}} -->
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <form class="devour-form button-size">
-                                <input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-                                <button type="submit" class="btn btn-default">Devour it!</button>
-                            </form>
-                        </div>
-                    {{/unless}}
-                {{/each}}
+        <div class="col-12 col-md-8">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Eat-Da-Burger</h1>
+                <a href="#new-burger-form"><button class="action-btn">Add to Menu</button></a>
+                <a href="#menu"><button class="action-btn">View Menu</button></a>
+                <a href="#devoured-list"><button class="action-btn">Rate Tastiness</button></a>
             </div>
-        </div>
-        <div class="col-md-6 text-center" class="task">
-            {{#each burger_data}}
-                {{#if this.devoured}}
-                    <input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
-                {{/if}}
-            {{/each}}
         </div>
     </div>
 </div>
 
 <div class="container">
+
     <div class="row">
-        <div class="col-md-12 text-center enter_section">
-            <form action="/burgers/create" method="POST">
-                <input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-                <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
-            </form>
-            <p>Enter a burger you want to eat Click the "Submit" button.</p>
+        <div class="col-12 col-md-6">
+            <div class="card text-center" id="menu">
+                <div class="card-header">
+                    <h3 class="card-title">Menu</h3>
+                    <h6 class="card-subtitle mb-2 text-muted">Click to Devour</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {{#each burgerInst}}
+                        {{#unless devoured}}
+                        <li class="list-group-item devour-item">
+                            <button class="devour-btn" data-burgerID="{{id}}" style="width: 100%;">{{burger_name}}</button>
+                        </li>
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="card text-center" id="devoured-list">
+                <div class="card-header">
+                    <h3 class="card-title">Burgers Devoured</h3>
+                    <h6 class="card-subtitle mb-2 text-muted">Click to delete &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Click to Rate</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {{#each burgerInst}}
+                        {{#if devoured}}
+                        <li class="list-group-item devoured-item" data-burgerID="{{id}}">
+                            <div class="row">
+                                <div class="col">
+                                    <button class="delete-btn" data-burgerID="{{id}}" style="">
+                                        {{burger_name}}
+                                    </button>
+                                </div>
+                                <div class="col stars-rating" data-burgerID="{{id}}">
+                                    <i class="fa fa-star burger{{id}}" data-rating="1"></i>
+                                    <i class="fa fa-star burger{{id}}" data-rating="2"></i>
+                                    <i class="fa fa-star burger{{id}}" data-rating="3"></i>
+                                    <i class="fa fa-star burger{{id}}" data-rating="4"></i>
+                                    <i class="fa fa-star burger{{id}}" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row add-row">
+        <div class="col-12">
+            <div class="card text-center" id="add-burger-card">
+                <div class="card-header">
+                    <h3 class="card-title">Add Burger to Menu</h3>
+                </div>
+                <div class="card-body">
+                    <div class="text-center" id="new-burger-form">
+                        <textarea type="text" rows="6" class="form-control" placeholder="ex. Crazy Burger" id="input-burger-name"></textarea>
+                        <button class="btn btn-outline-secondary" type="button" id="submit-burger-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<footer>
+    <div class="container text-center" style="padding-top: 15px;">
+        <a class="text-white" href="https://github.com/fbabauta">@fbabauta</a>
+    </div>
+</footer>
