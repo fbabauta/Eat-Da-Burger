@@ -2,9 +2,9 @@ $(function () {
 
     // render all stars when page loads
     renderAllStars();
-
+    
     // submit new burger
-    $("#submit-burger-btn").on("click", function (event) {
+    $("#submit-burger-btn").on("click", function(event) {
         event.preventDefault();
 
         // ensures empty field isn't submitted
@@ -26,7 +26,7 @@ $(function () {
     });
 
     // devour burger button - updates devoured value to true
-    $(".devour-btn").on("click",, function (event) {
+    $(".devour-btn").on("click", function(event) {
         event.preventDefault();
 
         let id = $(this).data("burgerid");
@@ -37,28 +37,28 @@ $(function () {
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: burgerData
-        }).then(function () {
+        }).then(function() {
             console.log("Burger devoured!");
             location.reload();
         });
     });
 
-    // delete burger
-    $(".delete-btn").on("click", function (event) {
+    // delete burger 
+    $(".delete-btn").on("click", function(event) {
         event.preventDefault();
 
         let id = $(this).data("burgerid");
-
+        
         $.ajax("/api/burgers/" + id, {
-            type: "DELETE"
-        }).then(function () {
-            console.log("Burgers deleted!")
+            type:"DELETE"
+        }).then(function() {
+            console.log("Burger deleted!")
             location.reload();
         });
     });
 
-    
-    // update stars rating
+
+    // update stars rating stars rating
     $(".fa-star").on("click", function (event) {
         event.preventDefault();
         let ratingNum = $(this).data("rating");
@@ -76,7 +76,7 @@ $(function () {
             type: "PUT",
             data: burgerData
         }).then(function () {
-            location.reload();
+            location.reload(); 
         });
     });
 
@@ -84,14 +84,14 @@ $(function () {
     function renderAllStars() {
         $.ajax("/api/burgers", {
             type: "GET",
-        }).then(function (data) {
+        }).then(function(data) {
             for (var i = 0; i < data.length; i++) {
                 renderStars(data[i].id, data[i].rating);
             }
         });
     };
 
-    // renders stars for individual burgers
+    // render stars for individual burgers
     function renderStars(id, ratingNum) {
         $(`i.burger${id}`).each(function () {
             $(this).removeClass("checked");
