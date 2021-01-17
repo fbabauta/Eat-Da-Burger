@@ -1,5 +1,5 @@
 // Set up MySQL connection
-var mysql = require("mysql");
+const mysql = require("mysql");
 
 // import login information from .env file
 // require('dotenv').config({ path: '../.env' });
@@ -17,7 +17,7 @@ if (process.env.JAWSDB_URL) {
     password: "password123",
     database: "burgers_db"
   });
-};
+}
 
 // Make mysql connection
 connection.connect(function (err) {
