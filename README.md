@@ -22,13 +22,13 @@ This application was built using MySQL, Node, Express, Handlebars, JavaScript, a
 
 ## Technologies 
 
-![handlebarsjs](https://user-images.githubusercontent.com/70370805/104286496-f7c34180-5469-11eb-94e1-130768025c0d.png)
+[![handlebarsjs](https://user-images.githubusercontent.com/70370805/104286496-f7c34180-5469-11eb-94e1-130768025c0d.png)](#)
 
-![mysql45](https://user-images.githubusercontent.com/70370805/104286500-fa259b80-5469-11eb-841c-2a884f8c131f.jpg)
+[![mysql45](https://user-images.githubusercontent.com/70370805/104286500-fa259b80-5469-11eb-841c-2a884f8c131f.jpg)](#)
 
-![javascript](https://user-images.githubusercontent.com/70370805/104287167-eaf31d80-546a-11eb-862f-cdb1877c73b2.jpg)
+[![javascript](https://user-images.githubusercontent.com/70370805/104287167-eaf31d80-546a-11eb-862f-cdb1877c73b2.jpg)](#)
 
-![nodejs](https://user-images.githubusercontent.com/70370805/104287546-74a2eb00-546b-11eb-8e99-f85f565d661e.png)
+[![nodejs](https://user-images.githubusercontent.com/70370805/104287546-74a2eb00-546b-11eb-8e99-f85f565d661e.png)](#)
 
 ![expressjs](https://user-images.githubusercontent.com/70370805/104287935-01e63f80-546c-11eb-908b-d554d799720e.png)
 
