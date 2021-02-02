@@ -15,5 +15,14 @@
     "express-handlebars": "^5.2.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbabauta/Eat-Da-Burger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fbabauta/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/fbabauta/Eat-Da-Burger#readme"
 }
