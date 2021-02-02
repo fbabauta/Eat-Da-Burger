@@ -40,7 +40,7 @@ This application was built using MySQL, Node, Express, Handlebars, JavaScript, a
 
 ## Usage
 
-➡️ Navigate to the `deployed Heroku App`. 
+➡️ Navigate to the [deployed Heroku App](https://stark-citadel-52180.herokuapp.com/). 
 
 ➡️ Click on the <b>'View Menu'</b> button to view burgers currently on the menu. 
 
